@@ -1,6 +1,5 @@
-# Project Name
-> Lending Club Case Study 
-	Perform EDA on given loan data set 
+# Lending Club Case Study
+Perform EDA on given loan data set 
 		- To find driving factors (or driver variables) behind loan default 
 		- Which can be utilised for company's portfolio and risk assessment. 
 
