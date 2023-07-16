@@ -7,31 +7,43 @@ If the applicant is likely to repay the loan, then not approving the loan result
 If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company 
 
 ## Table of Contents
-* Description and Goal 
-* Exploratory Data Analysis
-   1. Load Data/Import Libraries 
-   2. Data Clean Up (Rows)    
-	      a. Removing Customer variables
-		  b. Removing columns where all values are null
-		  c. Removing columns with more than 50% missing values
-		  d. Remove columns with just one value
-		  e. Remove free text columns
-		  f. Remove columns with all unique values
-   3. Data Understanding 
-   4. Data Clean up (Columns)
-		 a. Detect Missing Values - Propose imputation or cleanup
-		 b. Loan Status: Filter Out Values Needed For Analysis
-   5.  Data Analysis
-         a. Data Overview
-		 b. Univariate analysis with Insights
-		 c. Bi-variate Analysis with Insights
-		 d. Multi-variate analysis with Insights
-* Recommendations 
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Conclusions](#conclusions)
+* [Contact](#contact)
 
 ## General Information
 - Lending Club is a marketplace for personal loans that matches borrowers who are seeking a loan with investors looking to lend money and make a return.
 - When the company receives a loan application, the company has to make a decision for loan approval based on the applicant's profile.
 - Identify risky loan applicants. Such loans can be reduced thereby cutting down the amount of credit loss.
+
+### Business Objective¶
+The dataset we have been given contains information about past loan applicants and whether they ‘defaulted’ or not. The aim is to identify patterns which indicate if a person is likely to default, which may be used for taking actions such as denying the loan, reducing the amount of the loan, lending (to risky applicants) at a higher interest rate, etc.
+
+In this case study, we will use Exploratory Data Analysis to understand how consumer attributes and loan attributes influence the tendency of default.
+
+### Technical Objective
+To use Exploratory Data Analysis (EDA) to understand how consumer attributes and loan attributes influence the tendency of default. From the insights identified, we will provide recommendations on what attributes can be considered to reduce loans that result in credit loss.
+
+### Steps Followed in our EDA
+Data Sourcing
+Data Cleanup
+Data Understanding
+Univariate Analysis
+Bivariate Analysis (Includes analysis using Derived Metrics)
+Multivariate Analysis
+
+### Disclaimer:
+Do execute our code file, dataset loan.csv should be placed in the same location as the code file.
+
+## Technologies Used
+- Python
+- Numpy
+- Pandas
+- matplotlib
+- seaborn
+- plotly
+- missingno
 
 ## Conclusions
 - Larger loan amounts (> 15000) for a 60-month term across high-risk grades (D to G) must be given with caution.​
@@ -43,16 +55,7 @@ If the applicant is not likely to repay the loan, i.e. he/she is likely to defau
 - Loans given out in NV state must be considered with caution.​
 - Although we do not have sufficient data on borrowers with a previous record of bankruptcies, from the available dataset, it can be seen that people with a previous record of bankruptcies tend to default again. These loans must be given with less priority.
 
-## Technologies Used
-- Python
-- Numpy
-- Pandas
-- matplotlib
-- seaborn
-- plotly
-- missingno
-
 ## Contact
 - Chethana Manyam​
-- Jenifer  Sam​
+- Jenifer Sam​
 - Pallavi Nigam 
